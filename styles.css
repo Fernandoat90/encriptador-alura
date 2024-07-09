@@ -1,0 +1,103 @@
+body {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px; 
+}
+
+#contenedor-texto {
+    display: flex;
+    flex: 1; 
+    padding: 20px; 
+}
+
+#ingTexto-container {
+    flex: 1; 
+    padding-right: 20px; 
+    display: flex;
+    flex-direction: column;
+}
+
+#ingTexto {
+    font-size:40px;
+    flex: 1; 
+    resize: vertical; 
+    margin-bottom: 10px; 
+}
+
+#salida-container {
+    width: 20%; 
+    display: flex;
+    flex-direction: column;
+}
+
+#salida {
+    flex: 1;
+    font-size:3.1em;
+    padding: 10px; 
+    box-sizing: border-box; 
+    background-color: #f0f0f0; 
+    resize: vertical; 
+    overflow-y: auto; 
+}
+
+label, select, button {
+    margin: 10px;
+    width: 100%; 
+    padding: 10px; 
+    border-radius:8px;
+}
+
+select {
+    width:160px; 
+    font-size:20px;
+}
+
+button {
+    font-size:20px;
+    width: 200px;
+    background-color: #0f0f0f;
+    color: rgb(237, 231, 231); 
+    border: none; 
+    cursor: pointer; 
+}
+
+button:hover{
+ transition: 0.3s;
+ background-color:rgb(74, 74, 75);
+ color:#f67373;  
+ font-size: 23px; 
+}
+
+@media (max-width: 768px) {
+     h1{
+        font-size: 2em;
+        text-align: center;
+        margin-top: 20px; 
+     }
+
+    #contenedor-texto {
+        padding: 10px;
+    }
+
+    #ingTexto-container, #salida-container {
+        max-width: 80%;
+        font-size:5px;
+    }
+
+    #botones-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    
+}
+
+
+
